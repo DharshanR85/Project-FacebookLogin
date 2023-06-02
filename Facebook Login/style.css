@@ -1,0 +1,318 @@
+ *{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+ }
+
+ body{
+    background-color: #f2f2f2;
+    position: relative;
+    height: 115vh;
+    overflow-x: hidden;
+ }
+
+ #container{
+    display: flex;
+ }
+
+ #recent_login{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    left: 20vw;
+    top: 13vh;
+    margin-right: 30vw;
+ }
+
+ #facebook{
+    width: 198px;
+    height: 70px;
+    margin: -20px;
+ }
+
+ #recent_login > #title{
+    font-size: 28px;
+    font-weight: normal;
+    line-height: 32px;
+    margin-top: 20px;
+    margin-bottom: 5px;
+ }
+
+ #recent_login > #subtitle{
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 15px;
+    margin-bottom: 20px;
+    color: #606770;
+ }
+
+ #cards{
+    display: flex;
+ }
+
+ #card-one, #card-two, #card-three{
+    position: relative;
+    background-color: white;
+    margin-right: 10px;
+    border-radius: 5px;
+    margin-right: 20px;
+ }
+
+ #card-one:hover, #card-two:hover, #card-three{
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: box-shadow 0.3s;
+ }
+
+ #card-one-img, #card-two-img, #card-three-img{
+    width: 160px;
+    height: 160px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+ }
+
+ #add-account{
+     color: blue;
+ }
+
+ .username{
+    font-size: 18px;
+    line-height: 22px;
+    padding: 12px;
+    text-align: center;
+    color: rgb(75, 79, 86);
+ }
+
+ #cancel{
+    position: absolute;
+    top: 5px;
+    left: 8px;
+    color: white;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    background-color: #606770;
+    cursor: pointer;
+    opacity: 0.5;
+ }
+
+ #card-one:hover #cancel{
+    background-color: white;
+    opacity: 1.0;
+    background-color: rgb(194, 193, 193);
+    height: 25px;
+    width: 25px;
+    line-height: 22px;
+    top: -5px;
+    left: -5px;
+    font-size: 25px;
+    transition: 0.3s;
+ }
+
+ #card-two:hover #cancel{
+    background-color: white;
+    opacity: 1.0;
+    background-color: rgb(194, 193, 193);
+    height: 25px;
+    width: 25px;
+    line-height: 22px;
+    top: -5px;
+    left: -5px;
+    font-size: 25px;
+    transition: 0.3s;
+ }
+
+ #card-two:hover #cancel{
+    background-color: white;
+    opacity: 1.0;
+    background-color: rgb(194, 193, 193);
+    height: 25px;
+    width: 25px;
+    line-height: 22px;
+    top: -5px;
+    left: -5px;
+    font-size: 25px;
+    transition: 0.3s;
+ }
+
+ #login{
+    position: relative;
+    top: 18vh;
+    background-color: #FFFFFF;
+    width: 400px;
+    height: 350px;
+    border-radius: 10px;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 10px 10px 20px 10px;
+    align-items: center;
+    box-shadow: 0 5px 5px 3px gainsboro;
+ }
+
+ #login > a{
+    text-decoration: none;
+    margin: 18px 0;
+    color: #1877f2;
+    font-size: 15px;
+ }
+
+ #login > a:hover{
+    text-decoration: underline;
+    cursor: pointer;
+ }
+
+ hr{
+    width: 90%;
+    height: 0.1%;
+    border: none;
+    background-color: rgb(194, 193, 193);
+ }
+
+ #login > input[type=email], #login > input[type=password]{
+    width: 95%;
+    height: 35%;
+    border-radius: 5px;
+    border: 1.5px solid black;
+    margin: 8px 0;
+    padding-left: 10px;
+    font-size: 16px;
+ }
+
+ #login > input[type=password]{
+    margin-bottom: 12px;
+ }
+
+ #login > input[type=email]:focus , #login > input[type=password]:focus{
+    outline: none;
+    border: 1px solid #1877f2;
+    box-shadow: 0 0 5px #606770;
+    caret-color: blue;
+ }
+
+ #login-button{
+    background-color: #1877f2;
+    color: white;
+    font-size: 20px;
+    border-radius: 5px;
+    width: 95%;
+    height: 120px;
+    border: none;
+    font-weight: bold;
+ }
+
+ #login-button:hover{
+    background-color: #166FF5;
+    cursor: pointer;
+ }
+
+ #create_new_account{
+    background-color: #42b72a;
+    color: white;
+    font-size: 20px;
+    border-radius: 5px;
+    width: 60%;
+    height: 100px;
+    border: none;
+    font-weight: bold;
+    margin-top: 25px;
+ }
+
+ #create_new_account:hover{
+    background-color: #3a9d2a;
+    cursor: pointer;
+ }
+
+ p{
+    font-size: 15px;
+    position: absolute;
+    bottom: -55px;
+ }
+
+ footer{
+    background-color: #f5f5f5;
+    width: 100vw;
+    position: absolute;
+    bottom: 0;
+    padding: 20px;
+    font-size: 12px;
+    color: #a6a8aa;
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    word-spacing: 12px;
+    list-style: 20px;
+ }
+
+ @media screen and (max-width:1114px)
+ {
+    #recent_login{
+        left: 70px;
+        margin-right: 22vw;
+    }
+
+    #login{
+        right: 30px;
+    }
+ }
+
+ @media screen and (max-width:900px)
+ {
+    body{
+        height: 150vh;
+    }
+
+    #container{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #recent_login{
+        left: 0;
+        margin-right: 0;
+        top: 20px;
+        align-items: center;
+    }
+
+    #card-one{
+        margin-right: 5px;
+    }
+
+    #card-two{
+        margin-left: 5px;
+        margin-right: 0;
+    }
+
+    #card-three{
+        margin-left: 5px;
+    }
+
+    #login{
+        text-align: center;
+        margin-top: -30px;
+        margin-right: 0;
+        top: 80px;
+        left: 0;
+    }
+
+    #recent_login, #login{
+        position: relative;
+    }
+
+    footer{
+        position: absolute;
+        padding: 20px;
+        width: 100vw;
+    }
+ }
+
+ @media screen and (max-height:670px){
+    footer{
+        position: relative;
+        top: 100px;
+    }
+ }
